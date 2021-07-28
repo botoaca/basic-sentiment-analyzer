@@ -53,7 +53,7 @@ SentimentAnalyzer
             }
         } while (iss);
     
-        unsigned short Verdict = 0;
+        short Verdict = 0;
         if (Positive || Negative) Verdict = (Positive - Negative) / (Positive + Negative);
         else Verdict = 0;
         return Verdict;
